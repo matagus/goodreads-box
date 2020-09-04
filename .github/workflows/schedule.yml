@@ -5,7 +5,7 @@ on:
     branches:
       - master
   schedule:
-    - cron: "0 */8 * * *"   # Runs every 8 hours
+    - cron: "0 */12 * * *"   # Runs every 8 hours
 jobs:
   update-gist:
     runs-on: ubuntu-latest
