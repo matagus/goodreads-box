@@ -1,11 +1,7 @@
 name: Update gist
 on:
-  workflow_dispatch:
-  push:
-    branches:
-      - master
   schedule:
-    - cron: "0 */12 * * *"   # Runs every 8 hours
+    - cron: "0 */12 * * *"   # Runs every 12 hours
 jobs:
   update-gist:
     runs-on: ubuntu-latest
